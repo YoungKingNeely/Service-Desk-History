@@ -16,11 +16,3 @@ jobs:
         run: |
           echo "Triggering cache bust by touching App.js"
           echo "// cache bust $(date)" >> src/App.js
-
-      - name: Push cache bust
-        run: |
-          git config user.name "automation"
-          git config user.email "automation@example.com"
-          git add src/App.js
-          git commit -m "Automated cache bust to trigger GitHub Pages rebuild" || echo "No changes to commit"
-          git push origin main
