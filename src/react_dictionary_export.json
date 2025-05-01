@@ -1,17 +1,32 @@
 {
-  "OUT-002-N": {
-    "Type": "Incident",
-    "Summary": "Outlook public folder calendar does not appear",
-    "Troubleshooting History": "Checked permissions. No resolution yet."
-  },
-  "ONE-001-Y": {
-    "Type": "Incident",
-    "Summary": "OneNote error loading events",
-    "Troubleshooting History": "Issue cleared after credential reset. Solved."
-  },
-  "UAC-006": {
-    "Type": "Knowledge Base",
-    "Summary": "How to confirm elevation token",
-    "Troubleshooting History": "Use Task Manager and check user token column."
-  }
+    "ADM-002": {
+        "Type": "Knowledge Base",
+        "Summary": "Use of net localgroup to add AD group to local administrators",
+        "Troubleshooting History": "Describes the process of using the command 'net localgroup administrators \"CORP\\YourAdminGroupName\" /add' to add an Active Directory group to local administrators. This is often used for granting administrative rights through group policies."
+    },
+    "UAC-001": {
+        "Type": "Knowledge Base",
+        "Summary": "Confirming UAC prompt behavior (prompt for consent/credentials)",
+        "Troubleshooting History": "Outlines the method to confirm the User Account Control (UAC) behavior for elevation prompts. Includes instructions for checking Local Security Policy > Security Settings > Local Policies > Security Options > User Account Control settings."
+    },
+    "ONE-001-Y": {
+        "Type": "Incident",
+        "Summary": "Error Loading Events in OneNote when inserting meeting details on VM",
+        "Troubleshooting History": "2025-04-28 - Verified user was on a VM environment.\n2025-04-28 - Attempted credential clearing and re-authentication.\n2025-04-29 - Verified Office/OneNote and Outlook integration settings.\n2025-04-29 - Checked registry paths for add-ins and COM integration.\n2025-04-29 - Confirmed no GPO restrictions blocking OneNote/Outlook communication.\n2025-04-30 - Ran OneNote in safe mode to isolate add-in conflicts.\n2025-04-30 - Forced cache rebuild in OneNote and Outlook.\n2025-05-01 - Rebuilt user profile.\n2025-05-01 - Issue unresolved, escalated to Tier 2 support."
+    },
+    "OUT-002-N": {
+        "Type": "Incident",
+        "Summary": "Outlook public folder calendar does not appear after selecting 'Add to Favorites'",
+        "Troubleshooting History": "2025-04-25 - Verified user permissions and folder visibility.\n2025-04-25 - Checked Mail Favorites misrouting possibility.\n2025-04-26 - Confirmed Cached Exchange Mode was disabled (organization policy).\n2025-04-27 - Cleared Outlook client cache and restarted.\n2025-04-28 - Verified no applicable GPOs blocking Favorites sync.\n2025-04-29 - Created profile clone to rule out corruption.\n2025-04-30 - Profile clone did not resolve the issue.\n2025-05-01 - Issue remains unsolved; potential limitation due to public folder replication or Exchange backend."
+    },
+    "UAC-006": {
+        "Type": "Knowledge Base",
+        "Summary": "How to confirm elevation state/token",
+        "Troubleshooting History": "Describes the process to confirm UAC elevation tokens using Task Manager and other tools. Includes steps to check for 'Administrator' tokens and identify if processes are running with elevated privileges."
+    },
+    "LIC-001-Y": {
+        "Type": "Incident",
+        "Summary": "Adobe Licensing (adobe_licensing_wd_acro.exe application error)",
+        "Troubleshooting History": "2025-05-01 - User reported 'adobe_licensing_wd_acro.exe application error' when launching Adobe Acrobat.\n2025-05-01 - Confirmed error was isolated to licensing component.\n2025-05-01 - Attempted repair install of Adobe Acrobat without success.\n2025-05-01 - Checked user permissions and antivirus exclusions.\n2025-05-01 - Performed full sign-out and user signed into a different VM session.\n2025-05-01 - Error resolved after new session initialization; probable cause was corrupted user state or VM licensing service cache."
+    }
 }
