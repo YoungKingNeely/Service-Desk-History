@@ -1,0 +1,22 @@
+{
+  "ADM-002": {
+    "Type": "Knowledge Base",
+    "Summary": "Use of net localgroup to add AD group to local administrators",
+    "Troubleshooting History": "Use of net localgroup to add AD group to local administrators (Based on internal documentation or prior resolution steps.)"
+  },
+  "UAC-001": {
+    "Type": "Knowledge Base",
+    "Summary": "Confirming UAC prompt behavior (prompt for consent/credentials)",
+    "Troubleshooting History": "Confirming UAC prompt behavior (prompt for consent/credentials) (Based on internal documentation or prior resolution steps.)"
+  },
+  "ONE-001": {
+    "Type": "Incident",
+    "Summary": "Error Loading Events in OneNote when inserting meeting details on VM",
+    "Troubleshooting History": "2025-05-01 01:34:01 - 1. Verified user was on a VM...\n2025-05-01 01:34:01 - 2. Cleared credentials...\n2025-05-01 01:34:01 - 3. Still unresolved."
+  },
+  "OUT-002": {
+    "Type": "Incident",
+    "Summary": "Outlook public folder calendar does not appear after selecting 'Add to Favorites'",
+    "Troubleshooting History": "2025-05-01 01:34:01 - 1. Confirmed permissions and visibility.\n2025-05-01 01:34:01 - 2. Checked Mail Favorites misrouting.\n2025-05-01 01:34:01 - 3. Cached Mode off, OWA unavailable."
+  }
+}
