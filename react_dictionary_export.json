@@ -1,32 +1,37 @@
 {
-    "ADM-002": {
-        "Type": "Knowledge Base",
-        "Summary": "Use of net localgroup to add AD group to local administrators",
-        "Troubleshooting History": "Describes the process of using the command 'net localgroup administrators \"CORP\\YourAdminGroupName\" /add' to add an Active Directory group to local administrators. This is often used for granting administrative rights through group policies."
-    },
-    "UAC-001": {
-        "Type": "Knowledge Base",
-        "Summary": "Confirming UAC prompt behavior (prompt for consent/credentials)",
-        "Troubleshooting History": "Outlines the method to confirm the User Account Control (UAC) behavior for elevation prompts. Includes instructions for checking Local Security Policy > Security Settings > Local Policies > Security Options > User Account Control settings."
-    },
-    "ONE-001-Y": {
-        "Type": "Incident",
-        "Summary": "Error Loading Events in OneNote when inserting meeting details on VM",
-        "Troubleshooting History": "2025-04-28 - Verified user was on a VM environment.\n2025-04-28 - Attempted credential clearing and re-authentication.\n2025-04-29 - Verified Office/OneNote and Outlook integration settings.\n2025-04-29 - Checked registry paths for add-ins and COM integration.\n2025-04-29 - Confirmed no GPO restrictions blocking OneNote/Outlook communication.\n2025-04-30 - Ran OneNote in safe mode to isolate add-in conflicts.\n2025-04-30 - Forced cache rebuild in OneNote and Outlook.\n2025-05-01 - Rebuilt user profile.\n2025-05-01 - Issue unresolved, escalated to Tier 2 support."
-    },
-    "OUT-002-N": {
-        "Type": "Incident",
-        "Summary": "Outlook public folder calendar does not appear after selecting 'Add to Favorites'",
-        "Troubleshooting History": "2025-04-25 - Verified user permissions and folder visibility.\n2025-04-25 - Checked Mail Favorites misrouting possibility.\n2025-04-26 - Confirmed Cached Exchange Mode was disabled (organization policy).\n2025-04-27 - Cleared Outlook client cache and restarted.\n2025-04-28 - Verified no applicable GPOs blocking Favorites sync.\n2025-04-29 - Created profile clone to rule out corruption.\n2025-04-30 - Profile clone did not resolve the issue.\n2025-05-01 - Issue remains unsolved; potential limitation due to public folder replication or Exchange backend."
-    },
-    "UAC-006": {
-        "Type": "Knowledge Base",
-        "Summary": "How to confirm elevation state/token",
-        "Troubleshooting History": "Describes the process to confirm UAC elevation tokens using Task Manager and other tools. Includes steps to check for 'Administrator' tokens and identify if processes are running with elevated privileges."
-    },
-    "LIC-001-Y": {
-        "Type": "Incident",
-        "Summary": "Adobe Licensing (adobe_licensing_wd_acro.exe application error)",
-        "Troubleshooting History": "2025-05-01 - User reported 'adobe_licensing_wd_acro.exe application error' when launching Adobe Acrobat.\n2025-05-01 - Confirmed error was isolated to licensing component.\n2025-05-01 - Attempted repair install of Adobe Acrobat without success.\n2025-05-01 - Checked user permissions and antivirus exclusions.\n2025-05-01 - Performed full sign-out and user signed into a different VM session.\n2025-05-01 - Error resolved after new session initialization; probable cause was corrupted user state or VM licensing service cache."
-    }
+  "ADM-002": {
+    "Type": "Knowledge Base",
+    "Summary": "Use of net localgroup to add AD group to local administrators",
+    "Troubleshooting History": "Describes the process of using the command 'net localgroup administrators \"CORP\\YourAdminGroupName\" /add' to add an Active Directory group to local administrators. This is often used for granting administrative rights through group policies."
+  },
+  "UAC-001": {
+    "Type": "Knowledge Base",
+    "Summary": "Confirming UAC prompt behavior (prompt for consent/credentials)",
+    "Troubleshooting History": "Outlines the method to confirm the User Account Control (UAC) behavior for elevation prompts. Includes instructions for checking Local Security Policy > Security Settings > Local Policies > Security Options > User Account Control settings."
+  },
+  "ONE-001-Y": {
+    "Type": "Incident",
+    "Summary": "Error Loading Events in OneNote when inserting meeting details on VM",
+    "Troubleshooting History": "2025-04-28 - Verified user was on a VM environment.\n2025-04-28 - Attempted credential clearing and re-authentication.\n2025-04-29 - Verified Office/OneNote and Outlook integration settings.\n2025-04-29 - Checked registry paths for add-ins and COM integration.\n2025-04-29 - Confirmed no GPO restrictions blocking OneNote/Outlook communication.\n2025-04-30 - Ran OneNote in safe mode to isolate add-in conflicts.\n2025-04-30 - Forced cache rebuild in OneNote and Outlook.\n2025-05-01 - Rebuilt user profile.\n2025-05-01 - Issue unresolved, escalated to Tier 2 support."
+  },
+  "OUT-002-N": {
+    "Type": "Incident",
+    "Summary": "Outlook public folder calendar does not appear after selecting 'Add to Favorites'",
+    "Troubleshooting History": "2025-04-25 - Verified user permissions and folder visibility.\n2025-04-25 - Checked Mail Favorites misrouting possibility.\n2025-04-26 - Confirmed Cached Exchange Mode was disabled (organization policy).\n2025-04-27 - Cleared Outlook client cache and restarted.\n2025-04-28 - Verified no applicable GPOs blocking Favorites sync.\n2025-04-29 - Created profile clone to rule out corruption.\n2025-04-30 - Profile clone did not resolve the issue.\n2025-05-01 - Issue remains unsolved; potential limitation due to public folder replication or Exchange backend."
+  },
+  "UAC-006": {
+    "Type": "Knowledge Base",
+    "Summary": "How to confirm elevation state/token",
+    "Troubleshooting History": "Describes the process to confirm UAC elevation tokens using Task Manager and other tools. Includes steps to check for 'Administrator' tokens and identify if processes are running with elevated privileges."
+  },
+  "LIC-001-Y": {
+    "Type": "Incident",
+    "Summary": "Adobe Licensing (adobe_licensing_wd_acro.exe application error)",
+    "Troubleshooting History": "2025-05-01 - User reported 'adobe_licensing_wd_acro.exe application error' when launching Adobe Acrobat.\n2025-05-01 - Confirmed error was isolated to licensing component.\n2025-05-01 - Attempted repair install of Adobe Acrobat without success.\n2025-05-01 - Checked user permissions and antivirus exclusions.\n2025-05-01 - Performed full sign-out and user signed into a different VM session.\n2025-05-01 - Error resolved after new session initialization; probable cause was corrupted user state or VM licensing service cache."
+  },
+  "KB-101": {
+    "Type": "Knowledge Base",
+    "Summary": "React App Build and Debugging Process for Service Desk Assistant History",
+    "Troubleshooting History": "2025-04-30 - Decided to build a searchable app for incident and knowledge base records using React.\n2025-04-30 - Created React app using 'npx create-react-app search-form'.\n2025-04-30 - Built core functionality using useState hook to search for keys.\n2025-04-30 - Styled the app with CSS and added dropdown functionality for easier key selection.\n2025-04-30 - Created react_dictionary_export.json to hold dictionary records.\n2025-05-01 - Designed the file structure to store JSON in src/public/react_dictionary_export.json.\n2025-05-01 - Connected the React app to load data from the local JSON file.\n2025-05-01 - Exported data from ChatGPT conversations and saved into the JSON file.\n2025-05-01 - Set up GitHub repository named Service-Desk-History.\n2025-05-01 - Configured GitHub Pages to deploy app from the main branch (root folder).\n2025-05-01 - Linked the React app to pull live JSON data from GitHub Pages URL when updated.\n2025-05-01 - Learned that deploying updates requires 'npm run deploy' to publish changes to GitHub Pages.\n2025-05-01 - Created start_react.sh script to automate deployment and app start process.\n2025-05-01 - Built a macOS Automator shortcut to run start_react.sh for quick access.\n2025-05-01 - Encountered JSON cache issues that prevented updates from appearing in the app.\n2025-05-01 - Fixed cache issues by updating the JSON location and using ?v= parameter cache-busting in the React app.\n2025-05-01 - Added GitHub Actions workflow for advanced cache clearing (later removed for simplicity).\n2025-05-01 - Established process to export updated JSON from ChatGPT, overwrite the local file, and deploy using the shortcut.\n2025-05-01 - Verified that deploying updates automatically pushes new records to the live app.\n\nSummary:\n- All app data lives in public/react_dictionary_export.json.\n- Editing the JSON and running the shortcut will deploy changes and restart the app.\n- GitHub Pages hosts the live version of the app.\n- npm start = runs local app.\n- npm run deploy = publishes changes to live site.\n- start_react.sh automates both.\n- Automator shortcut triggers start_react.sh for easy use.\n\nAdvanced Tip:\n- Cache issues can be avoided by adding '?v=' + new version number to the JSON URL in App.js.\n- Always commit and push changes to GitHub before deploying.\n- Troubleshooting tools: Terminal (for git, npm), browser DevTools (for cache clearing and inspecting live JSON)."
+  }
 }
