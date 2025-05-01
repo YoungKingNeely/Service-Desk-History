@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Service-Desk-History/static/css/main.dffd44f7.css",
+    "main.js": "/Service-Desk-History/static/js/main.24048735.js",
+    "static/js/453.e455d311.chunk.js": "/Service-Desk-History/static/js/453.e455d311.chunk.js",
+    "index.html": "/Service-Desk-History/index.html",
+    "main.dffd44f7.css.map": "/Service-Desk-History/static/css/main.dffd44f7.css.map",
+    "main.24048735.js.map": "/Service-Desk-History/static/js/main.24048735.js.map",
+    "453.e455d311.chunk.js.map": "/Service-Desk-History/static/js/453.e455d311.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dffd44f7.css",
+    "static/js/main.24048735.js"
+  ]
+}
